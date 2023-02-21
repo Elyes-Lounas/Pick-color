@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Roboto+Mono:ital,wght@0,300;0,400;1,300;1,400&family=Seymour+One&family=Tajawal:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Seymour One', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container .card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  width: 300px;
+  height: 150px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.container .card .btn {
+  color: #fff;
+  outline: none;
+  padding: .25rem .5rem;
+  border-radius: 4px;
+  font-size: .7rem;
+  background-color: #10cefe;
+  border: 1px solid #000;
+}
+
+.container .card .btn:active{
+}
+
+.container .card .dropdown {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: #a2a2a2;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  transition: all .5s ease;
+}
+
+.container .card .dropdown .colors {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+}
+
+.container .card .dropdown .colors small{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+.main-color {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.container .card .dropdown .colors small:nth-child(1) {
+  background-color: #683ffc;
+}
+
+.container .card .dropdown .colors small:nth-child(2) {
+  background-color: #00ff08;
+}
+
+.container .card .dropdown .colors small:nth-child(3) {
+  background-color: #ffa400;
+}
+.container .card .dropdown .colors small:nth-child(4) {
+  background-color:#ff002f;
+}
+.container .card .active {
+  bottom:0;
+}
+
+.container .card .dropdown .colors small.active {
+  opacity: .5;
+}
+
+
+
